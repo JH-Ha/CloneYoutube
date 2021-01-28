@@ -71,8 +71,9 @@ header .icons .fa-search{
     max-width : 1000px;
 }
 
-.info{
+.infoAndUpNext .info{
     padding : var(--padding);
+    width : 100%;
 }
 
 .info .metadata .hashtags{
@@ -164,4 +165,50 @@ header .icons .fa-search{
     text-transform: uppercase;
     color : var(--red-color);
     font-size : var(--font-medium);
+}
+
+.upNext{
+    padding : 0 var(--padding);
+    width : 100%;
+}
+
+.upNext > .title{
+    font-size: var(--font-medium);
+    color : var(--grey-dark-color)
+}
+
+.upNext .item{
+    display: flex;
+}
+
+.upNext .item .img{
+    flex: 1 1 35%;
+    margin-right : var(--padding);
+}
+
+.upNext .item .img img{
+    width : 100%;
+}
+
+.upNext .item .info{
+    flex: 1 1 60%;
+}
+
+.upNext .item .moreBtn{
+    flex: 1 1 5%;
+}
+
+.upNext .item .info{
+    display : flex;
+    flex-direction: column;
+}
+
+.infoAndUpNext{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width : 768px){
+    .infoAndUpNext{
+        flex-direction: row;
+    }
 }
