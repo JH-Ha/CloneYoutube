@@ -1,0 +1,33 @@
+:root{
+    /* Color */
+    --white-color:#fff;
+    --black-color:#140a00;
+    --blue-color : #045fd4;
+    --red-color:#ff0000;
+    --grey-dark-color:#909090;
+    --grey-light-color:#e0e0e0;
+
+    /* Size */
+    --side-padding:12px;
+    --avatar-size:36px;
+
+    /* font Size */
+    --font-large:18px;
+    --font-medium:14px;
+    --font-small: 12px;
+    --font-micro: 10px;
+}
+
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+}
+
+header{
+    display: flex;
+}
