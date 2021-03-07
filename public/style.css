@@ -9,7 +9,7 @@
 
     /* Size */
     --padding:12px;
-    --avatar-size:36px;
+    --avatar-size:40px;
 
     /* font Size */
     --font-large:18px;
@@ -26,6 +26,7 @@
 
 body{
     font-family: Roboto;
+    overflow: scroll;
 }
 
 ul{
@@ -217,4 +218,88 @@ header .icons .fa-search{
     .infoAndUpNext{
         flex-direction: row;
     }
+}
+.comment-info{
+    display: flex;
+    font-size: var(--font-medium);
+    color : var(--black-color);
+    padding : var(--padding);
+}
+.comment-info .comment-num{
+    padding-right: var(--padding);
+}
+.comment-info .comment-sort{
+    color : var(--grey-dark-color);
+}
+.comment{
+    display: flex;
+}
+.comment .comment-input{
+    display: flex;
+    align-items: center;
+    margin : 0 10px;
+    flex-basis: 100%;
+}
+.comment .comment-input input{
+    width : 100%;
+    height : 20px;
+    border : 0px;
+    border-bottom: 1px solid #eeeeee;
+    transition: 500ms;
+}
+.comment .comment-input input:focus{
+    outline: none;
+    border-bottom: 1px solid #333333;
+    transition: 500ms;
+}
+
+.comment .comment-metadata{
+    display : flex;
+    flex-direction: column;
+}
+.profile-img img{
+    width : var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    margin : var(--padding);
+}
+
+.comment .comment-metadata{
+    margin : var(--padding);
+}
+.comment .name-date{
+    display :flex;
+    margin-bottom: calc(var(--padding)/2);
+}
+.comment .name{
+    font-size: var(--font-medium);
+}
+.comment .date{
+    font-size: var(--font-small);
+    color : var(--grey-dark-color);
+}
+.comment-actions{
+    display: flex;
+}
+.comment .comment-content{
+    margin-bottom: calc(var(--padding)/2);
+}
+.comment-actions li{
+    flex-basis: 30px;
+}
+.comment-actions button{
+    
+    display: flex;
+    font-size: var(--font-small);
+    color : var(--grey-dark-color);
+}
+.comment-actions li{
+    margin-right: var(--padding);
+}
+.comment-actions svg{
+    margin-right: calc(var(--padding)/2);
+}
+
+.comment-actions button svg.active{
+    color: var(--blue-color);
 }

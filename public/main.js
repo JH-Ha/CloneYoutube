@@ -8,12 +8,12 @@ moreBtn.addEventListener('click', function () {
     title.classList.toggle('clamp');
 });
 
-const $liThumbsUp = document.querySelector(".actions li#thumbs-up");
-const $liThumbsDown = document.querySelector(".actions li#thumbs-down");
+const $liThumbsUp = document.querySelector(".actions li.thumbs-up");
+const $liThumbsDown = document.querySelector(".actions li.thumbs-down");
 
 const toggleNum = ($target, $opposite) => {
     const $svg = $target.querySelector("svg");
-    console.log("toggle");
+
     const $span = $target.querySelector("button span");
     let num = parseInt($span.textContent);
 
@@ -37,3 +37,14 @@ $liThumbsUp.addEventListener("click", () => {
 $liThumbsDown.addEventListener("click", () => {
     toggleNum($liThumbsDown, $liThumbsUp);
 })
+
+//comment like and dislike
+const $commentLiThumbsUp = document.querySelector(".comment-actions li.thumbs-up");
+const $commentLiThumbsDown = document.querySelector(".comment-actions li.thumbs-down");
+
+$commentLiThumbsUp.addEventListener("click", () => {
+    toggleNum($commentLiThumbsUp, $commentLiThumbsDown);
+});
+$commentLiThumbsDown.addEventListener("click", () => {
+    toggleNum($commentLiThumbsDown, $commentLiThumbsUp);
+});
