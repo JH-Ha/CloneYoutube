@@ -273,6 +273,7 @@ header .icons .fa-search{
 }
 .comment .name{
     font-size: var(--font-medium);
+    margin-right: calc(var(--padding)/2);
 }
 .comment .date{
     font-size: var(--font-small);
